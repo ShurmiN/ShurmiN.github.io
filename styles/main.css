@@ -1,0 +1,23 @@
+@import url(main-desktop.css) (min-width:991px);
+@import url(main-tablet.css) (min-width:769px) and (max-width:990px);
+@import url(main-mobile.css) (max-width:768px);
+
+.background_cat{
+    width: 100%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.headline{
+    font-weight: 700;
+    text-align: center;
+}
+.description{
+    text-align: justify;
+}
+.description p{
+    margin:0;
+    color:rgb(53, 53, 53);
+}
+#main{
+    margin-bottom:15px;
+}

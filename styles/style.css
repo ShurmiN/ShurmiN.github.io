@@ -1,0 +1,24 @@
+body{
+    background-image: linear-gradient(#ffecf3,#ffecf3);
+}
+span{
+    font-weight: bold;
+}
+nav{
+    z-index: 1;
+    top:0;
+}
+.logo{
+    float:left;
+}
+#dropDownMenu{
+    left:0;
+}
+.footer{
+    background-color: #931773;
+    text-align: center;
+    color:#f0dae2;
+}
+.footer p{
+    margin:3px;
+}
