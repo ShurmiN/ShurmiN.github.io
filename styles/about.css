@@ -1,0 +1,25 @@
+@import url(about-desktop.css) (min-width:991px);
+@import url(about-mobile.css) (max-width:990px);
+
+.main h3{
+    text-align: center;
+}
+.main p{
+    margin:0;
+}
+.about{
+    text-align: justify;
+    margin-top: 2vw;
+    margin-bottom: 20px;
+}
+.about p{
+    margin-top:5px;
+}
+.headline{
+    margin-bottom: 1.5vw;
+}
+.avatar{
+    border-radius: 5px;
+    border:1px solid black;
+    box-shadow: 1px 1px 3px 1px #370b48;
+}

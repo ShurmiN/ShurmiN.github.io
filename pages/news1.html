@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Портал RAWG нарисовал волны интереса для игр, вышедших в январе</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="author" content="Шурмин Павел">
+    <meta name="description" content="Новости игр">
+    <meta name="keywords" content="Портал RAWG нарисовал волны интереса для игр, вышедших в январе">
+    <link rel="stylesheet" href="../styles/news.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link rel="shortcut icon" href="../pictures/logo.png" type="text/x-icon">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav id="nav" :class="navClass.mainNav">
+        <div>
+            <img class="logo" src="../pictures/logo.png">
+            <a class="navbar-brand p-0" href="../index.html" style="color: #2ca06a">
+                <h1>NGame</h1>
+            </a>
+        </div>
+        <button type="button" class="navbar-toggler hidden-lg-up" data-toggle="collapse" data-target="#dropDownMenu"
+            aria-expanded="false">
+            &#9776;
+        </button>
+        <div :class="navClass.menu" id="dropDownMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-auto" v-for="item in url" :key="item.id">
+                    <li-item :href="item.href" :todo="item"></li-item>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="main" class="container news">
+        <div class="row">
+            <div class="author_date col-md-8 d-flex">
+                <p>{{ news[0].name }}</p>
+                <p>{{ news[0].date }}</p>
+            </div>
+            <div class="col-12">
+                <h3 class="news_header">{{ news[0].title }}</h3>
+            </div>
+            <div class="description col-12">
+                <img class="news_img" :src="news[0].src[0]">
+                <h3><span>Портал RAWG нарисовал волны интереса для игр, вышедших в январе</span></h3>
+                <p>Многие уверены, что доступные корма для кошек готовят из сои и непригодных в пищу частей животных —
+                    шкур, хвостов и перьев.</p>
+                <p>
+                    Сервис RAWG рассказал о январских игровых премьерах с помощью особых графиков: волн интереса. В поле
+                    зрения портала попали три главные премьеры начала года: Kingdom Hearts III, Resident Evil 2 Remake и
+                    Ace Combat 7: Skies Unknown. Для этого использованы данные тысяч профилей PSN, Xbox и Steam,
+                    подключенных к RAWG.
+                </p>
+                <p>
+                    Для каждого игрока аналитики выделили день, когда он получил первый игровой трофей. А затем данные
+                    по достижениям за две недели свели в единый график вне зависимости от того, началось ли прохождение
+                    сразу после премьеры или неделями позже. Получившиеся волны интереса демонстрируют, насколько быстро
+                    падает ажиотаж и насколько игроки склонны возвращаться к проекту спустя несколько дней.
+                </p>
+                <p>
+                    Наибольший ажиотаж за всю историю серии Kingdom Hearts вызвала третья номерная часть. Тому
+                    способствовала интенсивная рекламная кампания. Однако уже на третий день интерес резко пошёл на
+                    спад: не исключено, что сложный и громоздкий сюжет делает порог вхождения слишком высоким для
+                    новичков. Однако те, кому удалось преодолеть начальные этапы, оставались в Kingdom Hearts III
+                    надолго.
+                </p>
+                <p>
+                    Ace Combat 7 — типичный пример игры серии с собственным кругом преданных поклонников. Особого
+                    ажиотажа на старте не наблюдалось, но кривая вышла пологой: в проект пришли те, кто знал, чего от
+                    него ждать, и их интерес сохраняется долгое время.
+                </p>
+                <p>
+                    Наконец, ремейк Resident Evil 2 был одной из самых ожидаемых игр января. Интерес к ней сохранялся
+                    стабильно в течение двух недель, и, что немаловажно, игроки проходили игру с интересом. За
+                    анализируемый период они в среднем получили почти половину игровых достижений.
+                </p>
+                <img src="..\pictures\day.jpg"  width="1000" height="400" >
+                <p>
+                    Стартап RAWG основан в 2017 году. В настоящее время это крупнейшая база игр, в ней более 280 000
+                    наименований. Сервис даёт возможность собрать игровую библиотеку на всех устройствах.
+                </p>
+            </div>
+            <div class="col-12">
+                <form method="GET">
+                    <p><b>Оставьте комментарий</b></p>
+                    <div>
+                        <label for="name">Имя:
+                            <input id="name" v-model="name" name="name" class="form-control" type="text"
+                                placeholder="Введите имя" tabindex="1" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="comment">Текст комментария:
+                            <textarea id="comment" v-model="comment" name="comment" class="form-control" cols="50"
+                                rows="3" wrap="hard" tabindex="2" required></textarea>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-outline-success"
+                        @click.prevent="addNewComment">Отправить</button>
+                    <button type="reset" class="btn btn-outline-success">Очистить</button>
+                </form>
+                <comment v-for="text in comments" :key="text.id" :word="text"></comment>
+            </div>
+        </div>
+    </div>
+
+    <div class="row footer m-0">
+        <div :class="footerStyle.footer">
+            <p v-for="link in inf[0]">{{ link }}</p>
+        </div>
+        <div :class="footerStyle.footer">
+            <p v-for="link in inf[1]">{{ link }}</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+        integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"
+        integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../scripts/news.js"></script>
+</body>
+
+</html>
