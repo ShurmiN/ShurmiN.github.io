@@ -2,7 +2,7 @@
 @import url(main-tablet.css) (min-width:769px) and (max-width:990px);
 @import url(main-mobile.css) (max-width:768px);
 
-.background_cat{
+.background_main{
     width: 100%;
     margin-top:10px;
     margin-bottom:10px;
