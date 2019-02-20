@@ -1,0 +1,15 @@
+@import url(style-desktop.css);
+
+.main{
+    margin-top: 4.5vw;
+}
+.main p{
+    font-size: 1.2vw;
+}
+.main h3{
+    font-size: 2.5vw;
+}
+.avatar{
+    width:15vw;
+    height: 23vw;
+}

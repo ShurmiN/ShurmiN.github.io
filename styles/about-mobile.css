@@ -1,0 +1,9 @@
+@import url(style-adaptive.css);
+
+.avatar{
+    width:25vw;
+    height: 35vw;
+}
+.main{
+    margin-top:55px;
+}

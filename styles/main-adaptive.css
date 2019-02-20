@@ -1,0 +1,17 @@
+@import url(style-adaptive.css);
+
+.background_cat{
+    height:65vw;
+}
+#main{
+    margin-top:60px;
+}
+.cat_feed{
+    display: flex;
+    margin-top: 10px;
+    border:2px solid #1f5c34;
+    background-color: #010201;
+}
+#product p{
+    color: #68b883;
+}

@@ -1,0 +1,15 @@
+@import url(style-adaptive.css);
+@import url(news-adaptive.css);
+
+.author_date p, .btn_pink{
+    font-size: 2.4vw;
+}
+.news_header{
+    font-size: 3.5vw;
+}
+.description p{
+    font-size: 2.8vw;
+}
+#toggleView p{
+    font-size:3vw;
+}

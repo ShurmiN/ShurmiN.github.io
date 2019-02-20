@@ -1,0 +1,39 @@
+@import url(style-desktop.css);
+
+.container{
+    max-width: 80%!important;
+}
+.news{
+    margin-top:4vw;
+}
+.btn_pink{
+    font-size: 3vw;
+    font-weight: 600;
+}
+.description h3{
+    font-size: 1.9vw;
+}
+.author_date p, .footer{
+    font-size: 1.2vw;
+}
+.description p{
+    font-size: 1.3vw;
+}
+.news_header{
+    font-size: 2.5vw;
+}
+#toggleView{
+    margin-top:4.5vw;
+    margin-left:85vw;
+    margin-right: 20px;
+}
+#toggleView p{
+    font-size:1.2vw;
+}
+.search{
+    margin-top:-3vw;
+}
+.btn-info{
+    text-align: center;
+    height: 100%;
+}

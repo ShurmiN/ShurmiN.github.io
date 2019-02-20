@@ -1,0 +1,36 @@
+@import url(style.css);
+
+nav{
+    height: 3.7vw;
+    background-image: linear-gradient(0,#348115,#44cc32,#44cc32);
+}
+.nav-link{
+    font-size: 1.6vw;
+    color: #d1bec5;
+}
+.nav-link:hover{
+    background-image: linear-gradient(0,#44cc32,#44cc32,#44cc32);
+    color:#fff7fa;
+}
+.navbar-brand h1{
+    font-size:3vw;
+    font-weight: 600;
+    margin:-0.1vw 2px 0 0;
+}
+.nav-item{
+    border-left: 1px solid #137740;
+    letter-spacing: 2px;
+}
+.nav-item a{
+    padding:0.6vw;
+}
+.logo{
+    height: 3.5vw;
+    width:5vw;
+}
+.active a{
+    color:#fff7fa;
+}
+.footer p{
+    font-size:1.2vw;
+}
