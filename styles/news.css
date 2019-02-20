@@ -18,11 +18,12 @@
     font-weight: 700;
 }
 .news_header a{
-    color:#370b48;
+    color:#33a07c;
 }
 .news_img{
-    width:100%;
+    width:60%;
     margin-right:10px;
+    margin-left:10px;
 }
 .container{
     margin-bottom:1.8vw;
