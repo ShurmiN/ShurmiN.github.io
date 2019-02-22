@@ -2,15 +2,15 @@
 
 nav{
     height: 3.7vw;
-    background-image: linear-gradient(0,#1c0bb3,#1c0bb4,#1c0bb6);
+    background-image: linear-gradient(0,#0c0c0e77,#0c0c0e77,#0c0c0e77);
 }
 .nav-link{
     font-size: 1.6vw;
-    color: #bed1c9;
+    color: #00000000;
 }
 .nav-link:hover{
-    background-image: linear-gradient(0,#1c0bb3,#1c0bb4,#1c0bb6);
-    color:#bed1c3;
+    background-image: linear-gradient(0,#ffffff,#ffffff,#ffffff);
+    color:#00000000;
 }
 .navbar-brand h1{
     font-size:3vw;
@@ -18,7 +18,7 @@ nav{
     margin:-0.1vw 2px 0 0;
 }
 .nav-item{
-    border-left: 1px solid #137740;
+    border-left: 1px solid #0c0c0e77;
     letter-spacing: 2px;
 }
 .nav-item a{
@@ -29,7 +29,7 @@ nav{
     width:5vw;
 }
 .active a{
-    color:#4a9672;
+    color:#00000077;
 }
 .footer p{
     font-size:1.2vw;

@@ -2,15 +2,15 @@
 
 nav{
     height: 50px;
-    background-color: #34792b;
+    background-color: #0000007e;
 }
 .navbar-collapse{
-    background-color: #34792b;
+    background-color: #fafafa;
 }
 .navbar-nav li{
     border:none;
     width:80%;
-    border-bottom:1px solid #b0c4bf;
+    border-bottom:1px solid #ffffff;
     font-size: 23px;
 }
 .navbar-brand h1{
@@ -21,7 +21,7 @@ nav{
     position: absolute;
     top:50px;
     width:100%;
-    border-top:1px solid #b0c4be;
+    border-top:1px solid #ffffff;
 }
 .navbar-toggler{
     float: right;

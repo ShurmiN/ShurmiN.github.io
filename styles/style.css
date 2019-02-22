@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(#87e670,#9af7a6);
+    background-image: linear-gradient(#00000098,#00000098);
 }
 span{
     font-weight: bold;
@@ -15,9 +15,9 @@ nav{
     left:0;
 }
 .footer{
-    background-color: #149b3c;
+    background-color: #00000098;
     text-align: center;
-    color:#61e9d2;
+    color:#ffffff;
 }
 .footer p{
     margin:3px;
