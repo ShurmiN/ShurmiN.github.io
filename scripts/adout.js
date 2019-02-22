@@ -20,9 +20,6 @@ var dropDownMenu = new Vue({
         },
         url:[
             { id:0, href:'../pages/news.html', text:'Новости'},
-            { id:1, href:'../pages/products.html', text:'Продукция'},
-            { id:2, href:'../pages/calculator.html', text:'Калькулятор кормов'},
-            { id:3, href:'../pages/maps.html', text:'Карта магазинов'},
             { id:4, href:'../pages/about.html', text:'О нас', active:'active'}
         ]
     }
