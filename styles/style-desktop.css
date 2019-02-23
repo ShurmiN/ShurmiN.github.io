@@ -9,7 +9,7 @@ nav{
     color: #00000000;
 }
 .nav-link:hover{
-    background-image: linear-gradient(0,#ffffff,#ffffff,#ffffff);
+    background-image: linear-gradient(0,#ffffff,#000000,#000000);
     color:#00000000;
 }
 .navbar-brand h1{

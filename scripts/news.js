@@ -3,23 +3,23 @@ Vue.component('li-item', {
     template: '<a class="nav-link" :class="todo.active"> {{ todo.text }} </a>'
 })
 Vue.component('comment', {
-    props:['word'],
-    template:`<div>
+    props: ['word'],
+    template: `<div>
         <hr>
         <h4>{{ word.name }}</h4>
         <p>{{ word.comment }}</p>
     </div>`
 })
 Vue.component('author-date', {
-    props:['author'],
-    template:`<div class="author_date col-sm-12 col-lg-11 col-12 mx-auto">
+    props: ['author'],
+    template: `<div class="author_date col-sm-12 col-lg-11 col-12 mx-auto">
         <p>{{ author.name }}</p>
         <p>{{ author.date }}</p>
     </div>`
 })
 Vue.component('description', {
-    props:['item'],
-    template:`<div class="description row">
+    props: ['item'],
+    template: `<div class="description row">
         <a :href="item.href" class="col-sm-12 col-lg-11 col-12 mx-auto link">
             <img :src="item.src[0]" class="news_img">
         </a>
@@ -27,8 +27,8 @@ Vue.component('description', {
     </div>`
 })
 Vue.component('news', {
-    props:['element'],
-    template:`<div class="container">
+    props: ['element'],
+    template: `<div class="container">
         <div class="row">
             <author-date :author="element"></author-date>
         </div>
@@ -38,8 +38,8 @@ Vue.component('news', {
     </div>`
 })
 Vue.component('small-news', {
-    props:['unit'],
-    template:`<a class="row description header-link" :href="unit.href">
+    props: ['unit'],
+    template: `<a class="row description header-link" :href="unit.href">
         <div class="col-lg-6 col-md-6 col-sm-6 col-6 img-link">
             <img :src="unit.src[0]" class="news_img">
         </div>
@@ -49,91 +49,88 @@ Vue.component('small-news', {
 var dropDownMenu = new Vue({
     el: '#nav',
     data: {
-        navClass:{
-            mainNav:'navbar navbar-expand-lg flex-nowrap navbar-dark container-fluid position-fixed',
-            menu:'navbar-collapse collapse in navbar-toggleable-sm d-lg-inline-block'
+        navClass: {
+            mainNav: 'navbar navbar-expand-lg flex-nowrap navbar-dark container-fluid position-fixed',
+            menu: 'navbar-collapse collapse in navbar-toggleable-sm d-lg-inline-block'
         },
-        url:[
-            { id:0, href:'../pages/news.html', text:'Новости', active:'active'},
-            { id:4, href:'../pages/about.html', text:'О нас'}
+        url: [
+            { id: 0, href: '../pages/news.html', text: 'Новости', active: 'active' },
+            { id: 1, href: '../pages/about.html', text: 'О нас' }
         ]
     }
 })
 var footer = new Vue({
-    el:'.footer',
-    data:{
-        footerStyle:{
-            footer:'col-6 p-0'
+    el: '.footer',
+    data: {
+        footerStyle: {
+            footer: 'col-6 p-0'
         },
-        inf:[
-            { address:'Адрес: Тверская, 55а, Ижевск, Pеспублика Удмуртия, 426052', email:'Email: shurmin99@bk.ru' },
-            { phone:'Телефон: +7 950 823 74 53', another:'Прочие ссылки: https://vk.com/i3838483' }
+        inf: [
+            { address: 'Адрес: Тверская, 55а, Ижевск, Pеспублика Удмуртия, 426052', email: 'Email: shurmin99@bk.ru' },
+            { phone: 'Телефон: +7 950 823 74 53', another: 'Прочие ссылки: https://vk.com/i3838483' }
         ]
     }
 })
 var main = new Vue({
-    el:'#main',
-    data:{
-        news:[
-            { 
-                id:0,
-                name:'Жукова Елена Вячеславовна',
-                date:'8 февраля 2018г.',
-                title:'Мифы о корме для кошек',
-                src:['../assets/news1.1.png','../assets/news1.2.jpg'],
-                href:'news_1.html',
-                description:`Существуют разные мифы о доступных кормах, как Whiskas. Принимая их за чистую монету, многие 
-                владельцы питомцев решают отказаться от готового рациона в пользу еды со стола или более дорогого 
-                корма. Но стоит ли верить тому, что говорят? Давайте разберемся.`
+    el: '#main',
+    data: {
+        news: [
+            {
+                id: 0,
+                name: 'Дмитрий Иванович Шольц',
+                date: '15.02.2019',
+                title: 'Портал RAWG нарисовал волны интереса для игр, вышедших в январе',
+                src: ['../pictures\news1.1.jpg'],
+                href: 'news1.html',
+                description: `Сервис RAWG рассказал о январских игровых премьерах с помощью особых графиков: волн интереса. 
+                В поле зрения портала попали три главные премьеры начала года: Kingdom Hearts III, Resident Evil 2 Remake и Ace Combat 7: 
+                Skies Unknown. Для этого использованы данные тысяч профилей PSN, Xbox и Steam, подключенных к RAWG.`
             },
-            { 
-                id:1,
-                name:'Алексей Сулин',
-                date:'11 мая 2018г.',
-                title:'Почему в производстве кормов для домашних животных важен научный подход?',
-                src:['../assets/news2.1.jpg','../assets/news2.2.jpg'],
-                href:'news_2.html',
-                description:`Кошки, как и люди, ежедневно нуждаются в получении определенного количества питательных веществ для поддержания 
-                работы своего организма. Благодаря Центру питания домашних животных WALTHAM, существующему уже более 50 лет, 
-                Whiskas создает сбалансированное и полноценное питание для питомцев разных возрастов. Мы контролируем более 
-                40 параметров, для того чтобы полностью обеспечить потребности вашего питомца в питательных веществах!`
+            {
+                id: 1,
+                name: 'Андрей Галадей',
+                date: '15.02.2019',
+                title: 'ехнология NVIDIA DLSS «замыливает» картинку в Metro: Exodus',
+                src: ['../pictures\news2.1.jpg'],
+                href: 'news2.html',
+                description: `4A Games выпустила патч первого дня для Metro: Exodus, который, как ожидалось, 
+                должен был улучшить работу интеллектуального сглаживания DLSS. 
+                Однако этого не произошло, а сглаживание всё также «замыливает» картинку.`
             },
-            { 
-                id:2,
-                name:'Серёжина Людмила Абрамовна',
-                date:'16 марта 2018г.',
-                title:'Эволюция питания кошки',
-                src:['../assets/news3.1.jpg'],
-                href:'news_3.html',
-                description:`Одомашнивание кошек связывают с началом развития земледелия более 9 тысяч лет назад. Стараясь защитить запасы 
-                зерна от грызунов, люди приманивали диких степных кошек ближе к своим поселениям. Взаимовыгодный союз превратился в долгую 
-                дружбу, которая, несмотря на смену образа жизни, не повлияла на природные инстинкты и пищевые потребности последних.`
+            {
+                id: 2,
+                name: 'Михаил Шевкун',
+                date: '19.02.2019.',
+                title: 'Xbox Live: на прошлой неделе Crackdown 3 была популярнее Metro: Exodus и Far Cry New Dawn',
+                src: ['../pictures\news3.1.jpg'],
+                href: 'news3.html',
+                description: `Портал True Achievements опубликовал еженедельные чарты самых популярных игр в сервисе Xbox Live.`
             },
         ],
-        name:'',
-        comment:'',
-        comments:[
+        name: '',
+        comment: '',
+        comments: [
         ],
-        nextCommentId:0,
-        list:false,
-        full:true,
-        search:''
+        nextCommentId: 0,
+        list: false,
+        full: true,
+        search: ''
     },
     methods: {
         addNewComment: function () {
-          this.comments.push({
-            id: this.nextCommentId++,
-            name: this.name,
-            comment: this.comment
-          })
-          this.name = '',
-          this.comment = ''
+            this.comments.push({
+                id: this.nextCommentId++,
+                name: this.name,
+                comment: this.comment
+            })
+            this.name = '',
+                this.comment = ''
         },
     },
     computed: {
         filterNews: function () {
             return this.news.filter(function (unit) {
-            return unit.title.indexOf(this.search) !== -1
+                return unit.title.indexOf(this.search) !== -1
             }.bind(this))
         }
     }

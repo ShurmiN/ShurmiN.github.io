@@ -20,7 +20,7 @@ var dropDownMenu = new Vue({
         },
         url:[
             { id:0, href:'../pages/news.html', text:'Новости'},
-            { id:4, href:'../pages/about.html', text:'О нас', active:'active'}
+            { id:1, href:'../pages/about.html', text:'О нас', active:'active'}
         ]
     }
 })
@@ -40,10 +40,7 @@ var main = new Vue({
     el:'#main',
     data:{
         creators:[
-            { id:0, name:'Кот борис', src:'../assets/boris.jpg', position:'Исполнительный директор.' },
-            { id:1, name:'Кот шеба', src:'../assets/sheba.jpg', position:'Креативный директор.' },
-            { id:2, name:'Васильев Алексей', src:'../assets/vasilyev.jpg', position:'Главный программист.' },
-            { id:3, name:'Кот матроскин', src:'../assets/matroskin.jpg', position:'Главный бухгалтер.' }
+            { id:2, name:'Шурмин Павел', src:'../', position:'Единственый программист.' },
         ],
     }
 })

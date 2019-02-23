@@ -13,7 +13,7 @@ var dropDownMenu = new Vue({
         },
         url:[
             { id:0, href:'pages/news.html', text:'Новости'},
-            { id:4, href:'pages/about.html', text:'О нас'}
+            { id:1, href:'pages/about.html', text:'О нас'}
         ]
     }
 })
