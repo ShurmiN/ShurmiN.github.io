@@ -5,12 +5,12 @@ nav{
     background-color: #0000007e;
 }
 .navbar-collapse{
-    background-color: #fafafa;
+    background-color: #acfd93;
 }
 .navbar-nav li{
     border:none;
     width:80%;
-    border-bottom:1px solid #ffffff;
+    border-bottom:1px solid #7eebb4;
     font-size: 23px;
 }
 .navbar-brand h1{
@@ -21,7 +21,7 @@ nav{
     position: absolute;
     top:50px;
     width:100%;
-    border-top:1px solid #ffffff;
+    border-top:1px solid #9e5151;
 }
 .navbar-toggler{
     float: right;

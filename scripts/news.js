@@ -106,7 +106,7 @@ var main = new Vue({
                 href: 'news3.html',
                 description: `Портал True Achievements опубликовал еженедельные чарты самых популярных игр в сервисе Xbox Live.`
             },
-        ],
+        ],                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
         name: '',
         comment: '',
         comments: [
