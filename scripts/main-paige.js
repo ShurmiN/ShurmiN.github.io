@@ -34,8 +34,8 @@ var footer = new Vue({
             footer:'col-6 p-0'
         },
         inf:[
-            { address:'Адрес: Тверская, 55а, Ижевск, Pеспублика Удмуртия, 426052', email:'Email: shurmin99@bk.ru' },
-            { phone:'Телефон: +7 950 823 74 53', another:'Прочие ссылки: https://vk.com/i3838483' }
+            { address:'Адрес: ', email:'Email: ' },
+            { phone:'Телефон: ', another:'Прочие ссылки: ' }
         ]
     }
 })
